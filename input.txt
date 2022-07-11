@@ -1,0 +1,12 @@
+Task 1 2
+Task 5 1
+Task 15 0
+Task 75 7
+Task 12 -10
+Task 2 576
+Task 6 5 
+Task 3 2 
+Task 9 0
+Task 1 5
+Task 3 2
+Task 1 9

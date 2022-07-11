@@ -17,6 +17,7 @@ public class ThreadPool
 	 * Create a default size thread pool.
  	 */
 	public ThreadPool() {
+		pool = Executors.newCachedThreadPool();
     }
 	
 	
@@ -26,7 +27,7 @@ public class ThreadPool
 	 * @param int size The number of threads in the pool.
 	 */
 	public ThreadPool(int size) {
-		pool = Executors.newFixedThreadPool(10);
+		pool = Executors.newFixedThreadPool(size);
     }
 	
 	

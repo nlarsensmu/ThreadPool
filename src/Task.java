@@ -9,6 +9,17 @@ public class Task implements Runnable
     }
 
     public void run() {
-        System.out.println("I am a task result = " + (a + b));
+    	System.out.println(Thread.currentThread().getName() + 
+    			" is starting to wait");
+    	
+    	try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+        System.out.println(Thread.currentThread().getName() + 
+        		"  task result = " + (a + b));
     }
 }
